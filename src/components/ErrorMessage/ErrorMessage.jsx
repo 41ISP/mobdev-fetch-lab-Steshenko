@@ -1,11 +1,11 @@
 import './ErrorMessage.css';
 
-function ErrorMessage() {
+function ErrorMessage({message = 'Что-то пошло не так'}) {
   return (
     <div className="error-message" role="alert">
       <p className="error-message__title">Что-то пошло не так</p>
       <p className="error-message__text">
-        Сервис OMDb недоступен. Проверьте соединение и попробуйте снова.
+        {message}
       </p>
     </div>
   );
