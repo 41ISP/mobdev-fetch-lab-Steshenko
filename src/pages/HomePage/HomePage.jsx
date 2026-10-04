@@ -5,6 +5,8 @@ import { useState } from 'react';
 import Loader from '../../components/Loader/Loader';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 
+const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
+
 function HomePage() {
   const [query, setQuery] = useState('');
   const [movies, setMovies] = useState([]);
